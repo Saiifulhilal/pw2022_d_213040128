@@ -36,7 +36,7 @@ $x = 1;
 $y = 2;
 
 
-//penugasan / asssignment
+//penugasan // asssignment
 //= , +=, -=, *=, /=, %=
 $a = 10 ;
 $a += 20;
