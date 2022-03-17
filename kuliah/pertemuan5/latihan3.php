@@ -19,14 +19,15 @@
     <li>Email : <?php echo $mhs[2];?></li>
     <li>Jurusan : <?php echo $mhs[3];?> </li>
 </ul>
-<?php }?> 
+<?php }?> */
 
 
 <?php
 $mahasiswa = [
     ["Sandhika Galih", "043040023", "Teknik Informatika", "sandhikagalih@unpas.ac.id"],
     ["Doddy Ferdiansyah", "033040001", "Teknik Industri", "doddy@yahoo.com"],
-    ["Erik", "023040123", "Teknik Planologi", "erik@gmail.com"]
+    ["Erik", "023040123", "Teknik Planologi", "erik@gmail.com"],
+    ["Anggoro Ari", "Anggoro@gmail.com", "103040123", "teknik industri"]
     ];
     ?>
 <!DOCTYPE html>
