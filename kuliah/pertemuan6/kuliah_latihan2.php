@@ -6,7 +6,7 @@ $mahasiswa = [
         "npm" => "213040128", 
         "jurusan" => "Teknik Informatika",
         "email" => "shilal0403@gmail.com",
-        "gambar" => ".jpeg"
+        "gambar" => "prabu jagaskara.jpg"
     ],
     [
         "#" => "2",
