@@ -62,10 +62,10 @@ echo 10 === "10" ;
 ?>
 
 
-' back tick
-~ tillde
-# pound
-^ caret
-| pipe 
-\ backslash
-/ slash 
+//  ' back tick
+// ~ tillde
+// # pound
+// ^ caret
+// | pipe 
+// \ backslash
+// / slash 
