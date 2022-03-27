@@ -24,14 +24,14 @@ $mahasiswa = [
     "nrp" => "213040128",
     "email" => "shilal0403@gmail.com",
     "jurusan" => "teknik informatika",
-    "gambar" => ".png"
+    "gambar" => "nyoba.jpg"
 ],
 [
     "nama" => "Julio Faridh", 
     "nrp" => "213040143",
     "email" => "juliofaridh@gmail.com",
     "jurusan" => "teknik informatika",
-    "gambar" => ".png"
+    "gambar" => ""
 ],
 ];
 ?>
