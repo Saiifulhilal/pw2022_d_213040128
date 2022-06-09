@@ -61,6 +61,7 @@ if (isset($_POST['tambah'])) {
           </div>
         </div>
       </div>
+      <!-- gambar -->
       <div class="form-group">
         <div class="row">
           <div class="col-sm-2">

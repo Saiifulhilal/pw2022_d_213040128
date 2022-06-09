@@ -10,7 +10,7 @@ function koneksi()
 function query($query)
 {
   $conn = koneksi();
-  // Query ke tabel teknologi
+  // Query ke tabel asuransi
   $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
   $rows = [];
@@ -58,7 +58,7 @@ function hapus($id)
 {
   $conn = koneksi();
 
-  // ambil data teknologi
+  // ambil data asuransi
   $asuransi = query("SELECT * FROM asuransi WHERE id = $id")[0];
 
   // hapus data gambar

@@ -1,14 +1,14 @@
 <?php
 require 'functions.php';
 
-// Query data teknologi berdasarkan id
+// Query data asuransi berdasarkan id
 $id = $_GET['id'];
 $row = query("SELECT * FROM asuransi WHERE id = $id")[0];
 
 // cek ketika tombol ubah sudah diklik
 if (isset($_POST['ubah'])) {
 
-  // ubah data di tabel mahasiswa
+  // ubah data di tabel asuransi
   if (ubah($_POST) > 0) {
     echo "<script>
                 alert('data berhasil diubah!');
@@ -25,7 +25,7 @@ if (isset($_POST['ubah'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ubah Data Produk</title>
+  <title>Ubah Data Asuransi</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
@@ -77,6 +77,7 @@ if (isset($_POST['ubah'])) {
           </div>
         </div>
       </div>
+      <!-- gambar -->
       <div class="form-group">
         <div class="row">
           <div class="col-sm-2">

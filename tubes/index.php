@@ -41,13 +41,13 @@ if (isset($_GET["cari"])) {
     </form>
 
     <div class="intro">
-      <h2 class="text-center" id="Produk" style="margin-top: 110px">Produk</h2>
+      <h2 class="text-center" id="Produk" style="margin-top: 110px">Asuransi</h2>
     </div>
     <div class="tab-content">
       <div class="row">
         <?php if (empty($asuransi)) : ?>
           <div class="col-md-12">
-            <h1 class="text-center">Data produk tidak ditemukan!</h3>
+            <h1 class="text-center">Data Asuransi tidak ditemukan!</h3>
           </div>
         <?php endif; ?>
       </div>
@@ -58,7 +58,7 @@ if (isset($_GET["cari"])) {
               <?php foreach ($asuransi as $row) : ?>
                 <div class="col-md-4">
                   <div class="card shadow mt-3">
-                    <img class="card-img-top img-fluid max-foto" src="img/<?= $row['gambar']; ?>" style="max-height: 200px; min-height: 200px;">
+                    <img class="card-img-top img-fluid max-foto" src="img/<?= $row['gambar']; ?>" style="max-height: 250px; min-height: 250px;">
                     <div class="card-body">
                       <h4 class="card-title"><?= $row['nama']; ?></h4>
                       <a href="detail.php?id=<?= $row['id']; ?>" class="btn btn-primary">Detail</a>

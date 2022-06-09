@@ -1,9 +1,9 @@
 <?php
 require 'functions.php';
-// Query ke tabel asus_data
+// Query ke tabel asuransi
 $id = $_GET['id'];
 $row = query("SELECT * FROM asuransi WHERE id = $id")[0];
-// Query tabel asus_data sesuai keyword pencarian
+// Query tabel asuransi sesuai keyword pencarian
 if (isset($_GET["cari"])) {
   $keyword = $_GET["keyword"];
   $query = "SELECT * FROM asuransi

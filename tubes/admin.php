@@ -13,7 +13,7 @@ if (isset($_GET["cari"])) {
   $keyword = $_GET["keyword"];
   $query = "SELECT * FROM asuransi
               WHERE 
-            asuransi LIKE '%$keyword%'";
+            nama LIKE '%$keyword%'";
   $asuransi = query($query);
 }
 ?>
@@ -38,20 +38,29 @@ if (isset($_GET["cari"])) {
     <h1 class="align-midcle">Asuransi</h1>
     <a href="tambah.php" class="btn btn-primary">Tambah Data</a>
     <form action="" method="GET" class="mt-4">
-      <div class="input-group mb-3 mt-4 w-25">
+      <div class="input-group mb-4 mt-4 w-25">
         <input type="text" class="form-control" name="keyword" placeholder="Masukkan Keyword Pencarian.." autocomplete="off">
         <button class="btn btn-primary" type="submit" name="cari">Cari</button>
       </div>
     </form>
     <a class="btn btn-primary text-left" href="logout.php">Logout</a>
-    <table class="table">
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Gambar</th>
+      <th scope="col">Asuransi</th>
+      <th scope="col">detail</th>
+      <th scope="col">Aksi</th>
+    </tr>
+  </thead>
       <?php
       $no = 1;
       foreach ($asuransi as $row) : ?>
         <tr>
           <th scope="row" class="align-middle"><?php echo $no++; ?></th>
           <td class="align-middle">
-            <img src="img/<?php echo $row["gambar"] ?>" class="card-img-top img-fluid max-foto mb-3">
+            <img src="img/<?php echo $row["gambar"] ?>" class="card-img-top img-fluid mb-3" style="max-height: 150px; min-height: 150px;">
           </td>
           <td class="align-middle"><?php echo $row["nama"]; ?></td>
           <td class="align-middle"><?php echo $row["detail"]; ?></td>
